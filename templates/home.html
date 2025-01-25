@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- Hero Section -->
+    <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <div class="text-center max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-blue-600">
+                The Future of Lending is Here
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                Connect with verified borrowers and lenders on our P2P platform.
+                Start your financial journey today.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="{{ url_for('login') }}" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-center">
+                    Start Investing
+                </a>
+                <a href="{{ url_for('login') }}" class="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-50 transition duration-300 border border-blue-600 text-center">
+                    Get a Loan
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="text-3xl font-bold text-blue-600 mb-2">₹1B+</div>
+            <div class="text-gray-600">Total Loans Funded</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="text-3xl font-bold text-blue-600 mb-2">50K+</div>
+            <div class="text-gray-600">Active Investors</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="text-3xl font-bold text-blue-600 mb-2">12%</div>
+            <div class="text-gray-600">Avg. Annual Returns</div>
+        </div>
+    </div> -->
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">For Lenders</h2>
+            <ul class="space-y-4">
+                <li class="flex items-center text-gray-600">
+                    <svg class="w-4 h-4 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Earn up to 12% annual returns on your investments
+                </li>
+                <li class="flex items-center text-gray-600">
+                    <svg class="w-4 h-4 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Diversify your portfolio across multiple borrowers
+                </li>
+                <li class="flex items-center text-gray-600">
+                    <svg class="w-4 h-4 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Start with as little as ₹10,000
+                </li>
+            </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">For Borrowers</h2>
+            <ul class="space-y-4">
+                <li class="flex items-center text-gray-600">
+                    <svg class="w-4 h-4 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Quick loan approval within 24 hours
+                </li>
+                <li class="flex items-center text-gray-600">
+                    <svg class="w-4 h-4 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Competitive interest rates starting at 10.5%
+                </li>
+                <li class="flex items-center text-gray-600">
+                    <svg class="w-4 h-4 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Flexible repayment terms up to 36 months
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
